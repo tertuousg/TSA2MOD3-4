@@ -1,0 +1,1 @@
+<?= $this->extend('layout') ?><?= $this->section('content') ?><section class="card"><p class="eyebrow">Public page</p><h1>User Profile</h1><dl><dt>Username</dt><dd><?= esc($user['username']) ?></dd><dt>Full Name</dt><dd><?= esc($user['full_name']) ?></dd><dt>Email</dt><dd><?= esc($user['email']) ?></dd></dl></section><?= $this->endSection() ?>

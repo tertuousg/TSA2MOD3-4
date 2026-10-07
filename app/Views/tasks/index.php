@@ -1,0 +1,1 @@
+<?= $this->extend('layout') ?><?= $this->section('content') ?><div class="heading"><div><p class="eyebrow">Read-only public page</p><h1>All Active Tasks</h1></div><?php if(session('is_logged_in')): ?><a class="button" href="<?= site_url('tasks/new') ?>">New Task</a><?php endif; ?></div><?= view('tasks/table',['tasks'=>$tasks]) ?><?= $this->endSection() ?>

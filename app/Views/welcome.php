@@ -1,0 +1,1 @@
+<?= $this->extend('layout') ?><?= $this->section('content') ?><p class="eyebrow">Daily overview</p><h1>Tasks for Today</h1><p>Here are your active tasks for <?= date('F d, Y') ?>.</p><?= view('tasks/table',['tasks'=>$tasks]) ?><?= $this->endSection() ?>
